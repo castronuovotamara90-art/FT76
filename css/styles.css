@@ -1,0 +1,169 @@
+/* RESET BÁSICO */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-1: hsl(330, 85%, 55%); /* #ec3a8b */
+    --color-2: hsl(30, 100%, 50%); /* #f37bb1 */
+    --color-3: hsl(60, 100%, 50%); /* #f9c2a1 */
+    --color-4: hsl(120, 100%, 40%); /* #b3196a */
+    --color-5: hsl(240, 100%, 60%); /* #4a90e2 */
+    --color-fondo: hsl(220,30%,98%); /* #f8fafc */
+    --color-texto: hsl(220, 25%, 18%); /* #1e293b */
+    --color-texto-suave: hsl(220, 12%, 45%); /* #666f80 */
+}
+/* BASE */
+
+body {
+  font-family:"Chelsea Market", system-ui;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+  box-shadow: 0 1px 3px hsl(220, 25%, 0.08%);
+}
+
+/* Layout HEADER */
+
+header {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--color-fondo);
+}
+
+header h1 {
+    margin-bottom: 1rem;
+}
+
+/* MAIN */
+
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* RUEDA DE COLORES */
+
+.main__wheel-section {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.main__color-wheel {
+    width: 300px;
+    height: 300px;
+    margin: 2rem auto;
+    border-radius: 50%;
+
+    background: conic-gradient(
+        hsl(0,100%,50%),
+        hsl(30,100%,50%),
+        hsl(60,100%,50%),
+        hsl(90,100%,50%),
+        hsl(120,100%,50%),
+        hsl(150,100%,50%),
+        hsl(180,100%,50%),
+        hsl(210,100%,50%),
+        hsl(240,100%,50%),
+        hsl(270,100%,50%),
+        hsl(300,100%,50%),
+        hsl(330,100%,50%),
+        hsl(360,100%,50%)
+    );
+
+    border: 5px solid hsl(210, 100%, 95%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* PALETTE SECTION */
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+}
+
+/* COMPONENTE: SWATCH */
+
+.swatch {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.75rem;
+    overflow:hidden;
+    background-color: var(--color-fondo);
+    box-shadow: 0 2px 8px hsl(220, 25%, 0.1%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 140px;
+}
+
+.swatch_color {
+    height: 7rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background-color: var(--color-1);
+}
+
+.swatch_info {
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+.swatch_name {
+    font-family: "Chelsea Market", system-ui;
+    margin-bottom: 0.5rem;
+}
+
+.swatch_codigo {
+    font-family: "Courier New", monospace;
+    font-size: 0.9rem;
+    color: var(--color-texto-suave);
+}
+
+.swatch:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px hsl(220, 25%, 0.15%);
+}
+
+.swatch:focus {
+    outline: 2px solid var(--color-1);
+    outline-offset: 4px;
+}
+/* COLORES HSL */
+
+.main__color-1 {
+    background-color: var(--color-1);
+}
+
+.main__color-2 {
+    background-color: hsl(30,100%,50%);
+}
+
+.main__color-3 {
+    background-color: hsl(60,100%,50%);
+}
+
+.main__color-4 {
+    background-color: hsl(120,100%,40%);
+}
+
+.main__color-5 {
+    background-color: hsl(240,100%,60%);
+}
+
+.main__color-6 {
+    background-color: hsl(240, 31%, 73%);
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: hsl(210, 100%, 95%);
+    margin-top: 2rem;
+}
