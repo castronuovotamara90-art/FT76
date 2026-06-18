@@ -15,6 +15,18 @@
     --color-fondo: hsl(220,30%,98%); /* #f8fafc */
     --color-texto: hsl(220, 25%, 18%); /* #1e293b */
     --color-texto-suave: hsl(220, 12%, 45%); /* #666f80 */
+    --color-boton: hsl(220, 29%, 62%);
+    --color-boton-hover: hsl(220, 90%, 45%);
+    --color-card: white;
+}
+
+body.dark-mode {
+  --color-fondo: hsl(220, 14%, 10%);
+  --color-texto: hsl(0, 0%, 98%);
+  --color-texto-suave: hsl(0, 0%, 70%);
+  --color-boton: hsl(330, 80%, 60%);
+  --color-boton-hover: hsl(330, 90%, 55%);
+  --color-card: hsl(220, 20%, 12%);
 }
 /* BASE */
 
@@ -38,6 +50,16 @@ header h1 {
     margin-bottom: 1rem;
 }
 
+h2 {
+    text-align: center;
+    padding: 1rem;
+    margin-top: -40px;  
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--color-fondo);
+}
+
 /* MAIN */
 
 main {
@@ -45,39 +67,6 @@ main {
     margin: 40px auto;
     padding: 1rem;
     text-align: center;
-}
-
-/* RUEDA DE COLORES */
-
-.main__wheel-section {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.main__color-wheel {
-    width: 300px;
-    height: 300px;
-    margin: 2rem auto;
-    border-radius: 50%;
-
-    background: conic-gradient(
-        hsl(0,100%,50%),
-        hsl(30,100%,50%),
-        hsl(60,100%,50%),
-        hsl(90,100%,50%),
-        hsl(120,100%,50%),
-        hsl(150,100%,50%),
-        hsl(180,100%,50%),
-        hsl(210,100%,50%),
-        hsl(240,100%,50%),
-        hsl(270,100%,50%),
-        hsl(300,100%,50%),
-        hsl(330,100%,50%),
-        hsl(360,100%,50%)
-    );
-
-    border: 5px solid hsl(210, 100%, 95%);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* PALETTE SECTION */
@@ -88,6 +77,40 @@ main {
     gap: 1.5rem;
 }
 
+.controles {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--color-fondo);
+    border: 1px solid hsl(220, 25%, 90%);
+}
+
+.controles__campo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.boton {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    padding: 0.85rem 1.8rem;
+    color: white;
+    background-color: var(--color-boton);
+    border: 2px solid hsl(220, 46%, 46%);
+    border-radius: 999px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.boton:hover {
+    background-color: var(--color-boton-hover);
+    transform: translateY(-2px);
+}
+
 /* COMPONENTE: SWATCH */
 
 .swatch {
@@ -95,14 +118,15 @@ main {
     flex-direction: column;
     border-radius: 0.75rem;
     overflow:hidden;
-    background-color: var(--color-fondo);
+    background-color: var(--color-card);
     box-shadow: 0 2px 8px hsl(220, 25%, 0.1%);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 140px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 200px;
+
 }
 
 .swatch_color {
-    height: 7rem;
+    height: 10rem;
     border-radius: 10px;
     margin-bottom: 1rem;
     background-color: var(--color-1);
@@ -115,12 +139,13 @@ main {
 
 .swatch_name {
     font-family: "Chelsea Market", system-ui;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
 
 .swatch_codigo {
-    font-family: "Courier New", monospace;
-    font-size: 0.9rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
     color: var(--color-texto-suave);
 }
 
@@ -164,6 +189,9 @@ main {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: hsl(210, 100%, 95%);
+    background-color: hsl(210, 26%, 91%);
     margin-top: 2rem;
+    color: var(--color-texto);
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 8px hsl(221, 7%, 57%);
 }

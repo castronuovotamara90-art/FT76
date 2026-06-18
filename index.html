@@ -14,68 +14,30 @@
 <body>
     <header>
         <h1>Colorfly Studio</h1>
-        <p>Aquí puedes generar tu propia paleta de colores a través de una rueda de colores</p>
+        <p>Aquí puedes generar tu propia paleta de colores de manera aleatoria</p>
     </header>
 
     <main>
 
-        <section class="main__wheel-section">
-            <h2>Genera tu paleta</h2>
+        <section id="generador">
+         <h2>Genera tu paleta</h2>
 
-            <div class="main__color-wheel"></div>
+          <div class="controles">
+             <button class="boton boton--primario" id="generar">Generar Paleta</button>
+             <button class="boton" id="modo">Modo oscuro</button>
 
+             <div class="controles__campo">
+                 <label class="controles__label" for="cantidad">Cantidad de colores</label>
+                 <select class="select" id="cantidad">
+                     <option value="6">6 colores</option>
+                     <option value="8">8 colores</option>
+                     <option value="9">9 colores</option>
+                   </select>
+                </div>
+            </div>
+ 
+         <section class="galeria" id="galeria"> </section>
         </section>
-        <h2>Paleta Generada</h2>
-        <section class="galeria">
-
-            <article class="swatch">
-                <div class="swatch_color main__color-1"></div>
-                <div class="swatch_info">
-                    <p class="swatch_codigo">#ec3a8b · hsl(330, 85%, 55%)</p>
-                    <p class="swatch_name">Color 1</p>
-                </div>
-            </article>
-            <article class="swatch">
-                <div class="swatch_color main__color-2"></div>
-                <div class="swatch_info">
-                    <p class="swatch_codigo">#f37bb1 · hsl(30, 100%, 50%)</p>
-                    <p class="swatch_name">Color 2</p>
-                </div>
-            </article>
-
-            <article class="swatch">
-                <div class="swatch_color main__color-3"></div>
-                    <div class="swatch_info">
-                    <p class="swatch_codigo">#f9c2a1 · hsl(60, 100%, 50%)</p>
-                    <p class="swatch_name">Color 3</p>
-                </div>
-            </article>
-
-            <article class="swatch ">
-              <div class="swatch_color main__color-4"></div>
-                    <div class="swatch_info">
-                    <p class="swatch_codigo">#b3196a · hsl(120, 100%, 40%)</p>
-                    <p class="swatch_name">Color 4</p>
-                </div>
-            </article>
-
-            <article class="swatch">
-               <div class="swatch_color main__color-5"></div>
-                    <div class="swatch_info">
-                    <p class="swatch_codigo">#4a90e2 · hsl(240, 100%, 60%)</p>
-                    <p class="swatch_name">Color 5</p>
-                </div>
-            </article>
-
-            <article class="swatch">
-               <div class="swatch_color main__color-6"></div>
-                    <div class="swatch_info">
-                    <p class="swatch_codigo">#4a90e2 · hsl(240, 100%, 60%)</p>
-                    <p class="swatch_name">Color 6</p>
-                </div>
-            </article>
-        </section>
-
     </main>
 
     <footer>
