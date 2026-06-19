@@ -4,24 +4,59 @@ Colorfly Studio es una aplicación web estática e interactiva para generar pale
 
 La app permite seleccionar cuántos colores quieres en la paleta y muestra cada color junto a su código HEX. Está construida con HTML, CSS y JavaScript puro, pensada para funcionar correctamente en desktop y mobile.
 
+## Demo en línea
+
+Puedes ver la aplicación en vivo en:
+
+https://castronuovotamara90-art.github.io/FT76/
+
 ## Funcionalidades principales
 
 - Generar una paleta de colores aleatoria.
-- Seleccionar el tamaño de la paleta: 6, 8 o 9 colores.
-- Colores generados en formato HSL con conversión a HEX.
-- Visualización de cada color con su código HEX.
-- Render dinámico según la cantidad seleccionada.
-- Modo oscuro/modo claro. (nuevo requerimiento)
+- Seleccionar la cantidad de colores: 6, 8 o 9.
+- Conversión de HSL a HEX para cada color.
+- Visualización de cada color con su nombre y código.
+- Modo claro / modo oscuro.
+- Interfaz sencilla y rápida para experimentar con paletas.
 
-## Alcance funcional mínimo
+## Decisiones técnicas
 
-- Botón “Generar paleta” operativo: ✅
-- Generación correcta de colores aleatorios: ✅
-- Render dinámico según el tamaño seleccionado: ✅
-- Microfeedback visible (tooltip, toast u equivalente): ⚠️ Pendiente
-- Uso de HTML semántico: ✅
-- Consideraciones básicas de accesibilidad (labels asociados, contraste suficiente, foco visible): ✅
-- Responsive en mobile y desktop: ⚠️ Pendiente
+- Proyecto construido con HTML5, CSS y JavaScript puro.
+- No usa frameworks ni dependencias externas.
+- La aplicación es completamente estática y se despliega fácilmente en GitHub Pages.
+- El diseño prioriza claridad visual, botones grandes y lectura directa de los códigos de color.
+- Se utiliza un sistema de variables CSS (`:root`) para manejar colores y temas.
+
+## Cómo usar la app
+
+1. Abre la aplicación en el navegador desde el enlace:
+   - https://castronuovotamara90-art.github.io/FT76/
+2. Selecciona la cantidad de colores que quieres generar (6, 8 o 9).
+3. Haz clic en el botón “Generar Paleta”.
+4. Observa la paleta generada y copia los códigos HEX si los necesitas.
+5. Si quieres, activa el modo oscuro con el botón correspondiente para ver la interfaz con fondo oscuro.
+
+## Ejecución local
+
+1. Clona el repositorio o descarga los archivos.
+2. Abre el archivo `index.html` con tu navegador web.
+3. También puedes usar un servidor local simple si prefieres, por ejemplo:
+   - `python3 -m http.server 5500`
+   - luego visita `http://localhost:5500` en tu navegador.
+4. Selecciona la cantidad de colores y pulsa “Generar Paleta”.
+
+## Despliegue en GitHub Pages
+
+1. Asegúrate de tener el repositorio en GitHub.
+2. Ve a la configuración del repositorio en GitHub.
+3. En la sección “Pages”, selecciona la rama `main` y la carpeta `/root`.
+4. Guarda los cambios.
+5. GitHub desplegará la app y la publicará en:
+   - `https://<tu-usuario>.github.io/<tu-repositorio>/`
+
+En este proyecto, la URL actualmente disponible es:
+
+https://castronuovotamara90-art.github.io/FT76/
 
 ## Checklist de implementación
 
@@ -30,35 +65,10 @@ La app permite seleccionar cuántos colores quieres en la paleta y muestra cada 
 - [x] Generación de colores aleatorios en HSL.
 - [x] Conversión de colores HSL a HEX.
 - [x] Visualización de cada color con su código HEX.
-- [x] Renderizado dinámico según el tamaño de la paleta.
 - [x] HTML semántico con encabezados, secciones y labels.
 - [ ] Estilos responsivos básicos para desktop y mobile.
 - [x] Modo oscuro / modo claro.
-- [x] Microfeedback visible al generar la paleta (tooltip, toast u otro).
-
-
-## Extra credit
-
-- [ ] Bloqueo de colores.
-- [ ] Guardado de paletas en localStorage.
-- [ ] Animaciones sutiles.
-- [ ] Copiar el código HEX al portapapeles al hacer clic sobre un color.
-- [ ] Mejoras visuales de UI.
-
-## Tech stack
-
-- HTML5
-- CSS
-- JavaScript
-- Git / GitHub
-- GitHub Pages
-
-## Cómo usar
-
-1. Abrir `index.html` en el navegador.
-2. Seleccionar la cantidad de colores (6, 8 o 9).
-3. Hacer clic en el botón “Generar Paleta”.
-4. Ver los colores generados y sus códigos HEX.
+- [ ] Mejorar accesibilidad y contraste en algunos estados.
 
 ## Nota
 
