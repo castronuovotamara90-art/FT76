@@ -12,20 +12,20 @@
     --color-3: hsl(60, 100%, 50%); /* #f9c2a1 */
     --color-4: hsl(120, 100%, 40%); /* #b3196a */
     --color-5: hsl(240, 100%, 60%); /* #4a90e2 */
-    --color-fondo: hsl(220,30%,98%); /* #f8fafc */
+    --color-fondo: hsl(67, 22%, 93%); /* #f8fafc */
     --color-texto: hsl(220, 25%, 18%); /* #1e293b */
-    --color-texto-suave: hsl(220, 12%, 45%); /* #666f80 */
-    --color-boton: hsl(220, 29%, 62%);
-    --color-boton-hover: hsl(220, 90%, 45%);
+    --color-texto-suave: hsl(222, 20%, 63%); /* #666f80 */
+    --color-boton: hsl(219, 11%, 50%);
+    --color-boton-hover: hsl(220, 91%, 13%);
     --color-card: white;
 }
 
 body.dark-mode {
-  --color-fondo: hsl(220, 14%, 10%);
-  --color-texto: hsl(0, 0%, 98%);
-  --color-texto-suave: hsl(0, 0%, 70%);
-  --color-boton: hsl(330, 80%, 60%);
-  --color-boton-hover: hsl(330, 90%, 55%);
+  --color-fondo: hsl(222, 11%, 23%);
+  --color-texto: hsl(0, 14%, 74%);
+  --color-texto-suave: hsl(0, 5%, 8%);
+  --color-boton: hsl(180, 31%, 82%);
+  --color-boton-hover: hsl(219, 90%, 55%);
   --color-card: hsl(220, 20%, 12%);
 }
 /* BASE */
@@ -42,8 +42,29 @@ body {
 
 header {
     text-align: center;
+    font-family:"Chelsea Market", system-ui;
+    font-size: 25px;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
     padding: 1.5rem;
     background-color: var(--color-fondo);
+}
+header.header-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.subtitulo-header {
+  font-size: 1.1rem;
+}
+
+.header-acciones {
+  display: flex;
+  align-items: center;
 }
 
 header h1 {
@@ -52,6 +73,7 @@ header h1 {
 
 h2 {
     text-align: center;
+    font-size: 2.3rem;
     padding: 1rem;
     margin-top: -40px;  
     margin-bottom: 15px;
@@ -81,11 +103,11 @@ main {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
+    justify-content: space-between;
     gap: 1rem;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
     background-color: var(--color-fondo);
-    border: 1px solid hsl(220, 25%, 90%);
 }
 
 .controles__campo {
@@ -94,12 +116,13 @@ main {
     gap: 0.35rem;
 }
 
+
 .boton {
     font-family: 'Arial', sans-serif;
     font-size: 1rem;
     padding: 0.85rem 1.8rem;
-    color: white;
-    background-color: var(--color-boton);
+    color: var(-color-texto);
+    background-color: var(-color-boton);
     border: 2px solid hsl(220, 46%, 46%);
     border-radius: 999px;
     cursor: pointer;

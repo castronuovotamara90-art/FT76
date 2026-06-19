@@ -12,10 +12,17 @@
     <title>Generador de Paleta de colores</title>
 </head>
 <body>
-    <header>
-        <h1>Colorfly Studio</h1>
-        <p>Aquí puedes generar tu propia paleta de colores de manera aleatoria</p>
-    </header>
+ <header class="header-contenedor">
+  <div class="header-titulo">
+    <h1>Colorfly Studio</h1>
+    <p class="subtitulo-header">Aquí puedes generar tu propia paleta de colores de manera aleatoria</p>
+  </div>
+
+  <div class="header-acciones">
+    <button class="boton" id="modo">Modo oscuro</button>
+  </div>
+</header>
+
 
     <main>
 
@@ -24,8 +31,6 @@
 
           <div class="controles">
              <button class="boton boton--primario" id="generar">Generar Paleta</button>
-             <button class="boton" id="modo">Modo oscuro</button>
-
              <div class="controles__campo">
                  <label class="controles__label" for="cantidad">Cantidad de colores</label>
                  <select class="select" id="cantidad">
