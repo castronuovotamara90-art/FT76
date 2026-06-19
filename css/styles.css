@@ -142,8 +142,8 @@ main {
     font-family: 'Arial', sans-serif;
     font-size: 1rem;
     padding: 0.85rem 1.8rem;
-    color: var(-color-texto);
-    background-color: var(-color-boton);
+    color: var(--color-texto);
+    background-color: var(--color-boton);
     border: 2px solid hsl(220, 46%, 46%);
     border-radius: 999px;
     cursor: pointer;
@@ -153,6 +153,7 @@ main {
 .boton:hover {
     background-color: var(--color-boton-hover);
     transform: translateY(-2px);
+    color: white;
 }
 
 /* COMPONENTE: SWATCH */

@@ -34,7 +34,7 @@ La app permite seleccionar cuántos colores quieres en la paleta y muestra cada 
 - [x] HTML semántico con encabezados, secciones y labels.
 - [ ] Estilos responsivos básicos para desktop y mobile.
 - [x] Modo oscuro / modo claro.
-- [ ] Microfeedback visible al generar la paleta (tooltip, toast u otro).
+- [x] Microfeedback visible al generar la paleta (tooltip, toast u otro).
 
 
 ## Extra credit
