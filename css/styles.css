@@ -23,7 +23,7 @@
 body.dark-mode {
   --color-fondo: hsl(222, 11%, 23%);
   --color-texto: hsl(0, 14%, 74%);
-  --color-texto-suave: hsl(0, 5%, 8%);
+  --color-texto-suave: hsl(0, 4%, 65%);
   --color-boton: hsl(180, 31%, 82%);
   --color-boton-hover: hsl(219, 90%, 55%);
   --color-card: hsl(220, 20%, 12%);
@@ -142,8 +142,8 @@ main {
     font-family: 'Arial', sans-serif;
     font-size: 1rem;
     padding: 0.85rem 1.8rem;
-    color: var(--color-texto);
-    background-color: var(--color-boton);
+    color: var(--color-texto-color-texto);
+    background-color: var(--color-boton-);
     border: 2px solid hsl(220, 46%, 46%);
     border-radius: 999px;
     cursor: pointer;
