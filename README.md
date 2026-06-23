@@ -52,7 +52,7 @@ https://castronuovotamara90-art.github.io/FT76_ProyectoM1_TamaraCastronuovo/
 ### Bloquear colores
 
 1. En cada swatch, pulsa el candado abierto (🔓) para bloquear ese color.
-2. El icono cambia a candado cerrado (🔒).
+2. El icono cambia a tilde verde (✅).
 3. Al generar una nueva paleta, los colores bloqueados se mantienen y solo cambian los desbloqueados.
 
 ### Cambiar de tema
@@ -183,16 +183,7 @@ Con VS Code + Live Server:
 2. Haz clic derecho en `index.html`.
 3. Selecciona "Open with Live Server".
 
-Alternativa simple:
 
-1. Abre `index.html` con doble clic.
-2. O levanta un servidor local:
-
-```bash
-python3 -m http.server 5500
-```
-
-3. Luego abre `http://localhost:5500`.
 
 ## Pasos para desplegar la aplicación
 
@@ -209,21 +200,27 @@ URL publicada actual:
 
 https://castronuovotamara90-art.github.io/FT76_ProyectoM1_TamaraCastronuovo/
 
-### Netlify
-
-1. Inicia sesión en Netlify.
-2. Arrastra la carpeta del proyecto al panel de deploy manual.
-3. Netlify crea una URL pública automáticamente.
-
-### Vercel
-
-1. Inicia sesión en Vercel con GitHub.
-2. Importa el repositorio.
-3. Vercel detecta proyecto estático y despliega.
 
 ## Uso de IA en el proyecto
 
 Durante el desarrollo utilicé IA para mejorar iteraciones de HTML, CSS y JavaScript, especialmente en la implementación de bloqueo de colores, mejoras de UX (toast) y documentación técnica.
+
+### Mejoras iterativas: de candado a tilde y copiar en portapapeles
+
+La IA ayudó a refinar dos mejoras importantes de UX:
+
+**Cambio de icono de bloqueo (🔓 → ✅):**
+- Se reemplazó el candado por una tilde verde para mayor claridad visual.
+- El icono ✅ indica mejor que el color está "seleccionado" o "fijo".
+- El CSS se actualizó para un brillo verde (`#22c55e`) cuando está bloqueado.
+
+**Función de copiar código al portapapeles (📋):**
+- Se implementó `copiarTexto()` con fallback: usa `navigator.clipboard` en navegadores modernos.
+- Si no es seguro (file://), crea un `textarea` invisible, copia y lo elimina.
+- Al copiar, muestra un toast de confirmación automático.
+- Se agregó el botón 📋 al final de cada tarjeta para copiar HEX + HSL en un solo clic.
+
+Ambos cambios mejoran la experiencia sin agregar dependencias externas.
 
 ### Evidencia visual del proceso
 

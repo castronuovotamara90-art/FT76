@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+/* ==============================
+   VARIABLES Y TEMAS
+   ============================== */
+
 :root {
     --color-1: hsl(330, 85%, 55%); /* #ec3a8b */
     --color-2: hsl(30, 100%, 50%); /* #f37bb1 */
@@ -15,7 +19,7 @@
     --color-fondo: hsl(67, 22%, 93%); /* #f8fafc */
     --color-texto: hsl(220, 25%, 18%); /* #1e293b */
     --color-texto-suave: hsl(222, 20%, 63%); /* #666f80 */
-    --color-boton: hsl(219, 11%, 50%);
+    --color-boton: hsl(221, 16%, 80%);
     --color-boton-hover: hsl(220, 91%, 13%);
     --color-card: white;
 }
@@ -24,40 +28,44 @@ body.dark-mode {
   --color-fondo: hsl(222, 11%, 23%);
   --color-texto: hsl(0, 14%, 74%);
   --color-texto-suave: hsl(0, 4%, 65%);
-  --color-boton: hsl(180, 31%, 82%);
+  --color-boton: hsl(180, 2%, 26%);
   --color-boton-hover: hsl(219, 90%, 55%);
   --color-card: hsl(220, 20%, 12%);
 }
-/* BASE */
+
+/* ==============================
+   TIPOGRAFÍA BASE
+   ============================== */
 
 body {
-  font-family:"Chelsea Market", system-ui;
+  font-family: "Chelsea Market", system-ui;
   background-color: var(--color-fondo);
   color: var(--color-texto);
   line-height: 1.6;
-  box-shadow: 0 1px 3px hsl(220, 25%, 0.08%);
 }
 
-/* Layout HEADER */
+/* ==============================
+   HEADER
+   ============================== */
 
-header {
-    text-align: center;
-    font-family:"Chelsea Market", system-ui;
-    font-size: 25px;
-    padding: 1.5rem
- 
-}
 header.header-contenedor {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+    padding: 1.5rem;
     text-align: left;
     flex-wrap: wrap;
 }
 
+header h1 {
+    font-family: "Chelsea Market", system-ui;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
 .subtitulo-header {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 .header-acciones {
@@ -65,43 +73,16 @@ header.header-contenedor {
   align-items: center;
 }
 
-header h1 {
-    margin-bottom: 1rem;
-}
-
 h2 {
     text-align: center;
     font-size: 2.3rem;
     padding: 1rem;
-    margin-top: -40px;  
-    margin-bottom: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--color-fondo);
+    margin: 1.5rem auto;
 }
 
-.toast {
-  position: fixed;
-  top: 1.5rem;
-  left: 50%;
-  transform: translateX(-50%) translateY(1rem);
-  background: rgba(30, 41, 59, 0.95);
-  color: white;
-  padding: 0.85rem 1.2rem;
-  border-radius: 999px;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.25s ease, transform 0.25s ease;
-  font-size: 0.95rem;
-  z-index: 10;
-}
-
-.toast.toast--visible {
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
-}
-
-/* MAIN */
+/* ==============================
+   MAIN
+   ============================== */
 
 main {
     max-width: 1100px;
@@ -110,14 +91,11 @@ main {
     text-align: center;
 }
 
-/* PALETTE SECTION */
+/* ==============================
+   CONTROLES Y SELECTOR
+   ============================== */
 
-.galeria {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    width: 100%;
-}
+
 
 .controles {
     display: flex;
@@ -136,13 +114,16 @@ main {
     gap: 0.35rem;
 }
 
+/* ==============================
+   BOTONES
+   ============================== */
 
 .boton {
     font-family: 'Arial', sans-serif;
     font-size: 1rem;
     padding: 0.85rem 1.8rem;
-    color: var(--color-texto-color-texto);
-    background-color: var(--color-boton-);
+    color: var(--color-texto);
+    background-color: var(--color-boton);
     border: 2px solid hsl(220, 46%, 46%);
     border-radius: 999px;
     cursor: pointer;
@@ -155,7 +136,9 @@ main {
     color: white;
 }
 
-/* COMPONENTE: SWATCH */
+/* ==============================
+   COMPONENTES: SWATCH
+   ============================== */
 
 .swatch {
     display: flex;
@@ -203,10 +186,24 @@ main {
 }
 
 .swatch_bloqueo.bloqueado {
-    color: #ffd700;
-    text-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+    color: #22c55e;
+    text-shadow: 0 0 8px rgba(34, 197, 94, 0.45);
 }
 
+.swatch_copiar {
+    font-size: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    padding: 0.2rem;
+    transition: transform 0.2s ease;
+}
+
+.swatch_copiar:hover {
+    transform: scale(1.15);
+}
 
 .swatch_info {
     padding: 0.5rem 1rem;
@@ -245,33 +242,46 @@ main {
     outline: 2px solid var(--color-1);
     outline-offset: 2px;
 }
-/* COLORES HSL */
 
-.main__color-1 {
-    background-color: var(--color-1);
+/* ==============================
+   TOAST DE NOTIFICACIÓN
+   ============================== */
+
+.toast {
+  position: fixed;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(1rem);
+  background: rgba(30, 41, 59, 0.95);
+  color: white;
+  padding: 0.85rem 1.2rem;
+  border-radius: 999px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  font-size: 0.95rem;
+  z-index: 10;
 }
 
-.main__color-2 {
-    background-color: hsl(30,100%,50%);
+.toast.toast--visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
 }
 
-.main__color-3 {
-    background-color: hsl(60,100%,50%);
+/* ==============================
+   GALERÍA
+   ============================== */
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
 }
 
-.main__color-4 {
-    background-color: hsl(120,100%,40%);
-}
-
-.main__color-5 {
-    background-color: hsl(240,100%,60%);
-}
-
-.main__color-6 {
-    background-color: hsl(240, 31%, 73%);
-}
-
-/* FOOTER */
+/* ==============================
+   FOOTER
+   ============================== */
 
 footer {
     text-align: center;
