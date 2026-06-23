@@ -27,7 +27,7 @@ Funcionalidades incluidas:
 
 Demo en línea:
 
-https://castronuovotamara90-art.github.io/FT76_ProyectoM1_TamaraCastronuovo/
+https://castronuovotamara90-art.github.io/ProyectoM1_TamaraCastronuovo/
 
 ## Manual de usuario — Instrucciones de uso
 
@@ -164,8 +164,8 @@ FT76/
 ### Opción A — Clonar con Git
 
 ```bash
-git clone https://github.com/castronuovotamara90-art/FT76_ProyectoM1_TamaraCastronuovo.git
-cd FT76_ProyectoM1_TamaraCastronuovo
+git clone https://github.com/castronuovotamara90-art/ProyectoM1_TamaraCastronuovo.git
+cd ProyectoM1_TamaraCastronuovo
 ```
 
 ### Opción B — Descargar ZIP
@@ -198,7 +198,7 @@ Como es una app estática, puedes desplegarla en GitHub Pages, Netlify o Vercel.
 
 URL publicada actual:
 
-https://castronuovotamara90-art.github.io/FT76_ProyectoM1_TamaraCastronuovo/
+https://castronuovotamara90-art.github.io/ProyectoM1_TamaraCastronuovo/
 
 
 ## Uso de IA en el proyecto
