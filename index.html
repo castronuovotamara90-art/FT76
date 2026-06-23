@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
     <!-- Enlazamos el archivo CSS para los estilos -->
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Generador de Paleta de colores</title>
+    <title>Color Factory - Generador de Paletas de Colores</title>
 </head>
 
 <body>
@@ -27,10 +27,10 @@
 
 
     <main>
-
+        <!-- SECCIÓN 1: Controles de generación -->
         <section id="generador">
             <h2>Genera tu paleta</h2>
-
+    
             <div class="controles">
                 <button class="boton boton--primario" id="generar">Generar Paleta</button>
                 <div class="controles__campo">
@@ -42,15 +42,19 @@
                     </select>
                 </div>
                 <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
-
             </div>
-
-            <div class="galeria" id="galeria" role="region" aria-label="Galería de paleta generada"></div>
+        </section>
+    
+        <!-- SECCIÓN 2: Resultados -->
+        <section id="galeria-section" aria-labelledby="galeria-titulo">
+            <h2 id="galeria-titulo">Paleta generada</h2>
+            <div class="galeria" id="galeria" role="region" aria-label="Galería de colores generados"></div>
         </section>
     </main>
 
     <footer>
-        <p>Proyecto FT76 Tamara Castronuovo</p>
+      <p>Proyecto <strong>FT76</strong> — Desarrollado por Tamara Castronuovo</p>
+      <small>&copy; 2026 Tamara Castronuovo. Todos los derechos reservados.</small>
     </footer>
 
     <script src="./script.js"></script>
