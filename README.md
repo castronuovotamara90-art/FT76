@@ -142,7 +142,7 @@ FT76/
 ├── css/
 │   └── styles.css
 ├── demo/
-│   └── demo-ProyectoM1_TamaraCastronuovo.gif
+│   └── demo_ProyectoM1_TamaraCastronuovo.gif
 └── ia/
       ├── Captura de pantalla 2026-06-20 a las 10.33.28.png
       ├── Captura de pantalla 2026-06-20 a las 10.33.39.png
@@ -232,4 +232,4 @@ Ambos cambios mejoran la experiencia sin agregar dependencias externas.
 
 **Video demo:**
 
-![Proceso de desarrollo y validación del proyecto con IA](demo/demo-ProyectoM1_TamaraCastronuovo.gif)
+![Proceso de desarrollo y validación del proyecto con IA](demo/demo_ProyectoM1_TamaraCastronuovo.gif)
