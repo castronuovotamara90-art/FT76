@@ -139,12 +139,10 @@ FT76/
 ├── index.html
 ├── script.js
 ├── README.md
-├── assets/
-│   └── img/
 ├── css/
 │   └── styles.css
 ├── demo/
-│   └── demo FT76 Tamara Castronuovo.gif
+│   └── demo-ProyectoM1_TamaraCastronuovo.gif
 └── ia/
       ├── Captura de pantalla 2026-06-20 a las 10.33.28.png
       ├── Captura de pantalla 2026-06-20 a las 10.33.39.png
@@ -232,6 +230,6 @@ Ambos cambios mejoran la experiencia sin agregar dependencias externas.
 ![Captura 4](ia/Captura%20de%20pantalla%202026-06-20%20a%20las%2010.33.51.png)
 ![Captura 5](ia/Captura%20de%20pantalla%202026-06-20%20a%20las%2010.34.17.png)
 
-**Demo:**
+**Video demo:**
 
-![Proceso de desarrollo y validación del proyecto con IA](demo/demo%20FT76%20Tamara%20Castronuovo.gif)
+![Proceso de desarrollo y validación del proyecto con IA](demo/demo-ProyectoM1_TamaraCastronuovo.gif)
